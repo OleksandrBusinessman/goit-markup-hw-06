@@ -674,6 +674,14 @@ img {
   fill: currentColor;
 }
 
+/* Форма Підпишіться на розсилку футер */
+.footer .submit-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: blueviolet;
+}
+
 /* backdrop */
 .backdrop {
   position: fixed;
@@ -688,10 +696,10 @@ img {
 
   background-color: rgba(0, 0, 0, 0.2);
 }
-.backdrop.is-hidden {
+/* .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-}
+} */
 
 /* modal window */
 .modal {
@@ -708,8 +716,11 @@ img {
   transition: transform var(--anim-dur) var(--main-cubic);
   background-color: var(--white-color);
 }
-.backdrop.is-hidden .modal {
+/* .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.7);
+} */
+.modal .link {
+  color: tomato;
 }
 
 /* кнопка модалки */
