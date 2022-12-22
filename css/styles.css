@@ -768,14 +768,16 @@ img {
 .item label {
   margin-bottom: 4px;
 }
+.form-modal input {
+  padding: 11px 12px;
+}
 .form-modal .link {
   color: tomato;
 }
-
 .form-modal textarea {
   resize: none;
+  padding: 12px 16px;
 }
-
 .form-modal textarea::placeholder {
-  color: tomato;
+  color: teal;
 }
