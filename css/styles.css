@@ -741,6 +741,15 @@ img {
 .footer .form-footer {
   margin-left: auto;
 }
+.form-footer p {
+  margin-bottom: 20px;
+}
+.form-footer input {
+  padding: 15px 16px;
+  margin-right: 12px;
+  width: 358px;
+  height: 50px;
+}
 .footer .submit-icon {
   display: inline-block;
   width: 24px;
