@@ -738,6 +738,9 @@ img {
 }
 
 /* Форма Підпишіться на розсилку футер */
+.footer .form-footer {
+  margin-left: auto;
+}
 .footer .submit-icon {
   display: inline-block;
   width: 24px;
