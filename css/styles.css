@@ -674,14 +674,6 @@ img {
   fill: currentColor;
 }
 
-/* Форма Підпишіться на розсилку футер */
-.footer .submit-icon {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-color: blueviolet;
-}
-
 /* backdrop */
 .backdrop {
   position: fixed;
@@ -696,10 +688,10 @@ img {
 
   background-color: rgba(0, 0, 0, 0.2);
 }
-/* .backdrop.is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-} */
+}
 
 /* modal window */
 .modal {
@@ -707,7 +699,7 @@ img {
   top: 50%;
   left: 50%;
 
-  padding: 8px;
+  padding: 40px;
 
   min-width: 528px;
   min-height: 581px;
@@ -716,11 +708,8 @@ img {
   transition: transform var(--anim-dur) var(--main-cubic);
   background-color: var(--white-color);
 }
-/* .backdrop.is-hidden .modal {
+.backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.7);
-} */
-.modal .link {
-  color: tomato;
 }
 
 /* кнопка модалки */
@@ -746,4 +735,44 @@ img {
 .backdrop .button:hover,
 .backdrop .button:focus {
   fill: var(--turquoise-color);
+}
+
+/* Форма Підпишіться на розсилку футер */
+.footer .submit-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: blueviolet;
+}
+
+/* Форма модалки */
+.data-list .item:not(:last-child) {
+  display: flex;
+  flex-direction: column;
+}
+.data-list .item:nth-child(-n + 3) {
+  margin-bottom: 10px;
+}
+.data-list .item:nth-child(4) {
+  margin-bottom: 20px;
+}
+.data-list .item:last-child {
+  margin-bottom: 30px;
+}
+.form-modal p {
+  margin-bottom: 12px;
+}
+.item label {
+  margin-bottom: 4px;
+}
+.form-modal .link {
+  color: tomato;
+}
+
+.form-modal textarea {
+  resize: none;
+}
+
+.form-modal textarea::placeholder {
+  color: tomato;
 }
