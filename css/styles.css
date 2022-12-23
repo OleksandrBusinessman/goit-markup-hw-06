@@ -787,9 +787,11 @@ img {
   margin-bottom: 20px;
 }
 .data-list .item:last-child {
+  text-align: center;
   margin-bottom: 30px;
 }
 .form-modal p {
+  text-align: center;
   margin-bottom: 12px;
 }
 .item label {
@@ -807,4 +809,9 @@ img {
 }
 .form-modal textarea::placeholder {
   color: teal;
+}
+.form-modal .submit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
