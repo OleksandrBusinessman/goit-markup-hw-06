@@ -743,18 +743,36 @@ img {
 }
 .form-footer p {
   margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.form-footer .email-footer {
+  display: flex;
 }
 .form-footer input {
-  padding: 15px 16px;
   margin-right: 12px;
+  padding: 15px 16px;
+
   width: 358px;
   height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background: var(--dark-color);
 }
-.footer .submit-icon {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-color: blueviolet;
+.form-footer input:hover,
+.form-footer input:focus {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-color: var(--turquoise-color);
+}
+.email-footer input::placeholder {
+  color: tomato;
 }
 
 /* Форма модалки */
