@@ -940,6 +940,7 @@ img {
   fill: var(--turquoise-color);
 }
 .form-modal .link {
+  text-decoration: underline;
   color: var(--turquoise-color);
 }
 .form-modal .submit {
