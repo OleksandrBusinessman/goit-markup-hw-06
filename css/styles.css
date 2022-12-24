@@ -906,7 +906,6 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 .form-modal .checkbox {
-  position: absolute;
   white-space: nowrap;
   width: 1px;
   height: 1px;
@@ -916,6 +915,10 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+.form-modal .checkbox {
+  position: absolute;
+  left: 0;
 }
 .item .label-checkbox {
   padding-left: 24px;
