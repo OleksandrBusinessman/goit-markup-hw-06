@@ -843,6 +843,7 @@ img {
 }
 .form-modal input {
   padding: 11px 42px;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color var(--anim-dur) var(--main-cubic),
@@ -862,6 +863,7 @@ img {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+
   pointer-events: none;
   fill: var(--nav-title-color);
   transition: fill var(--anim-dur) var(--main-cubic);
@@ -906,6 +908,7 @@ img {
 .item .icon-checkbox {
   position: absolute;
   left: 4px;
+
   border: 2px solid var(--nav-title-color);
   border-radius: 2px;
   pointer-events: none;
