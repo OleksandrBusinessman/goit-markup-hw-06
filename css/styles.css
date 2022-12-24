@@ -850,11 +850,15 @@ img {
   border-color: var(--turquoise-color);
   outline-color: var(--turquoise-color);
 }
+.item .item-div {
+  position: relative;
+}
 .data-list .icon {
   position: absolute;
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+  pointer-events: none;
   fill: var(--nav-title-color);
   transition: fill var(--anim-dur) var(--main-cubic);
 }
@@ -862,9 +866,6 @@ img {
 .form-modal input:focus + .icon,
 .form-modal input:not(:placeholder-shown) + .icon {
   fill: var(--turquoise-color);
-}
-.form-modal .link {
-  color: tomato;
 }
 .form-modal textarea {
   resize: none;
@@ -883,11 +884,23 @@ img {
 .form-modal textarea::placeholder {
   color: teal;
 }
+.form-modal .checkbox {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.form-modal .link {
+  color: tomato;
+}
 .form-modal .submit {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-.item .item-div {
-  position: relative;
 }
