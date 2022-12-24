@@ -885,7 +885,7 @@ img {
 .form-modal textarea::placeholder {
   color: teal;
 }
-/* .form-modal .checkbox {
+.form-modal .checkbox {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -896,7 +896,7 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-} */
+}
 .form-modal .link {
   color: tomato;
 }
