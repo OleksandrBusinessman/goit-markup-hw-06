@@ -936,7 +936,7 @@ img {
   transition: fill var(--anim-dur) var(--main-cubic), border var(--anim-dur) var(--main-cubic);
 }
 .item .checkbox:checked + .icon-checkbox {
-  border: none;
+  border: transparent;
   fill: var(--turquoise-color);
 }
 .form-modal .link {
