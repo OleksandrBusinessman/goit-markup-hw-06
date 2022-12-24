@@ -824,14 +824,15 @@ img {
   margin-bottom: 20px;
 }
 .data-list .item:last-child {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin-bottom: 30px;
 }
 .form-modal p {
   text-align: center;
   margin-bottom: 12px;
 }
-.item label {
+.item label:not(:last-child) {
   margin-bottom: 4px;
 }
 .item-div input {
@@ -884,7 +885,7 @@ img {
 .form-modal textarea::placeholder {
   color: teal;
 }
-.form-modal .checkbox {
+/* .form-modal .checkbox {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -895,7 +896,7 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
+} */
 .form-modal .link {
   color: tomato;
 }
