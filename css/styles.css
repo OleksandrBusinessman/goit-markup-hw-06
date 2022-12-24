@@ -730,6 +730,7 @@ img {
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--white-color);
+  transition: fill var(--anim-dur) var(--main-cubic);
 }
 
 .backdrop .button:hover,
@@ -824,7 +825,9 @@ img {
   margin-bottom: 20px;
 }
 .data-list .item:last-child {
+  position: relative;
   display: flex;
+  align-items: center;
   justify-content: center;
   margin-bottom: 30px;
 }
@@ -885,7 +888,7 @@ img {
 .form-modal textarea::placeholder {
   color: teal;
 }
-/* .form-modal .checkbox {
+.form-modal .checkbox {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -896,7 +899,23 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-} */
+}
+.item .label-checkbox {
+  padding-left: 24px;
+}
+.item .icon-checkbox {
+  position: absolute;
+  left: 4px;
+  border: 2px solid var(--nav-title-color);
+  border-radius: 2px;
+  pointer-events: none;
+  fill: transparent;
+  transition: fill var(--anim-dur) var(--main-cubic), border var(--anim-dur) var(--main-cubic);
+}
+.item .checkbox:checked + .icon-checkbox {
+  border: none;
+  fill: var(--turquoise-color);
+}
 .form-modal .link {
   color: tomato;
 }
