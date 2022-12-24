@@ -771,7 +771,8 @@ img {
     border-color var(--anim-dur) var(--main-cubic);
 }
 .form-footer input:hover,
-.form-footer input:focus {
+.form-footer input:focus,
+.form-footer input:not(:placeholder-shown) {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-color: var(--turquoise-color);
 }
@@ -842,7 +843,8 @@ img {
   transition: border-color var(--anim-dur) var(--main-cubic);
 }
 .form-modal input:hover,
-.form-modal input:focus {
+.form-modal input:focus,
+.form-modal input:not(:placeholder-shown) {
   border-color: var(--turquoise-color);
 }
 .data-list .icon {
@@ -854,7 +856,8 @@ img {
   transition: fill var(--anim-dur) var(--main-cubic);
 }
 .form-modal input:hover + .icon,
-.form-modal input:focus + .icon {
+.form-modal input:focus + .icon,
+.form-modal input:not(:placeholder-shown) + .icon {
   fill: var(--turquoise-color);
 }
 .form-modal .link {
@@ -868,7 +871,8 @@ img {
   transition: border-color var(--anim-dur) var(--main-cubic);
 }
 .form-modal textarea:hover,
-.form-modal textarea:focus {
+.form-modal textarea:focus,
+.form-modal textarea:not(:placeholder-shown) {
   border-color: var(--turquoise-color);
 }
 .form-modal textarea::placeholder {
