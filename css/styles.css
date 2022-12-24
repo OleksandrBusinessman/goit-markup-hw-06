@@ -834,9 +834,20 @@ img {
 .form-modal p {
   text-align: center;
   margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  letter-spacing: 0.03em;
+
+  color: var(--nav-title-color);
 }
 .item label:not(:last-child) {
   margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
 }
 .item-div input {
   width: 100%;
@@ -888,7 +899,11 @@ img {
   outline-color: var(--turquoise-color);
 }
 .form-modal textarea::placeholder {
-  color: teal;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
 }
 .form-modal .checkbox {
   position: absolute;
@@ -904,10 +919,15 @@ img {
 }
 .item .label-checkbox {
   padding-left: 24px;
+
+  font-size: 14px;
+  line-height: calc(24 / 14);
+
+  letter-spacing: 0.03em;
 }
 .item .icon-checkbox {
   position: absolute;
-  left: 4px;
+  left: 20px;
 
   border: 2px solid var(--nav-title-color);
   border-radius: 2px;
@@ -920,10 +940,30 @@ img {
   fill: var(--turquoise-color);
 }
 .form-modal .link {
-  color: tomato;
+  color: var(--turquoise-color);
 }
 .form-modal .submit {
   display: block;
   margin-left: auto;
   margin-right: auto;
+
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+
+  border-radius: 4px;
+  background-color: var(--turquoise-color);
+  border-color: transparent;
+  color: var(--white-color);
+  transition: background-color var(--anim-dur) var(--main-cubic),
+    box-shadow var(--anim-dur) var(--main-cubic);
+}
+.form-modal .submit:hover,
+.form-modal .submit:focus {
+  background-color: var(--button-active-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
