@@ -337,7 +337,7 @@
       </div>
 
       <!-- Форма Підпишіться на розсилку -->
-      <form class="js-speaker-form form-footer">
+      <form class="form-footer">
         <p>Підпишіться на розсилку</p>
         <div class="email-footer"><input type="email" name="email-footer" placeholder="E-mail" />
           <button class="button-footer" type="submit">Підписатися<svg class="icon" width="24" height="24">
@@ -359,7 +359,7 @@
       </button>
 
       <!-- Форма Залиште свої дані -->
-      <form class="js-speaker-form form-modal">
+      <form class="form-modal">
         <p>Залиште свої дані, ми вам передзвонимо</p>
         <ul class="list data-list">
           <li class="item"><label for="name">Ім'я</label>
@@ -402,17 +402,6 @@
 
   <!-- Скрипт modal.js -->
   <script src="./js/modal.js"></script>
-
-  <!-- Потім видалити дланий скрипт -->
-  <script>(() => {
-      document.querySelector('.js-speaker-form').addEventListener('submit', e => {
-        e.preventDefault();
-
-        new FormData(e.currentTarget).forEach((value, name) =>
-          console.log(`${name}: ${value}`),
-        );
-      });
-    })();</script>
 </body>
 
 </html>
