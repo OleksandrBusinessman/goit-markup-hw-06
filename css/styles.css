@@ -837,12 +837,25 @@ img {
 }
 .form-modal input {
   padding: 11px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color var(--anim-dur) var(--main-cubic);
+}
+.form-modal input:hover,
+.form-modal input:focus {
+  border-color: var(--turquoise-color);
 }
 .data-list .icon {
   position: absolute;
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+  fill: var(--nav-title-color);
+  transition: fill var(--anim-dur) var(--main-cubic);
+}
+.form-modal input:hover + .icon,
+.form-modal input:focus + .icon {
+  fill: var(--turquoise-color);
 }
 .form-modal .link {
   color: tomato;
@@ -850,6 +863,13 @@ img {
 .form-modal textarea {
   resize: none;
   padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color var(--anim-dur) var(--main-cubic);
+}
+.form-modal textarea:hover,
+.form-modal textarea:focus {
+  border-color: var(--turquoise-color);
 }
 .form-modal textarea::placeholder {
   color: teal;
